@@ -219,11 +219,6 @@ class PrepareCommitMsgGen < Formula
     sha256 "753eaaa0c7195244c84b5cc159dc8204b7fd99f716f11198f999f2332a86b178"
   end
 
-  resource "prepare-commit-msg-gen" do
-    url "https://github.com/rtuin/prepare-commit-msg-gen/archive/refs/tags/v0.1.0.tar.gz"
-    sha256 "897e76bdb81454707e4ce6addd735c13e2bdbc3d289b4cb79c3ed9a768382cc2"
-  end
-
   def install
     virtualenv_install_with_resources
   end
