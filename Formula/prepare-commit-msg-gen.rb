@@ -220,8 +220,7 @@ class PrepareCommitMsgGen < Formula
   end
 
   def install
-    venv = virtualenv_install_with_resources without: "prepare-commit-msg-gen"
-    venv.pip_install_and_link resource("prepare-commit-msg-gen")
+    virtualenv_install_with_resources
   end
 
   test do
